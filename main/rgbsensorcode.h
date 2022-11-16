@@ -1,5 +1,8 @@
 #include <Wire.h>
 #include "Adafruit_TCS34725.h"
+
+private 
+
 //
 /* Example code for the Adafruit TCS34725 breakout library */
 
