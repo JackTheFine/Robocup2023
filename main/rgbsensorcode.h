@@ -1,4 +1,4 @@
-public: class RGBSensor() {
+class RGBSensor() {
   #include <Wire.h>
   #include "Adafruit_TCS34725.h"
   
