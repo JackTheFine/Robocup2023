@@ -15,14 +15,6 @@ int motor3pin2 = 6;
 
 int motor4pin1 = 7;
 int motor4pin2 = 8;
-  pinMode(motor1pin1, OUTPUT);
-  pinMode(motor1pin2, OUTPUT);
-  pinMode(motor2pin1, OUTPUT);
-  pinMode(motor2pin2, OUTPUT);
-  pinMode(motor3pin1, OUTPUT);
-  pinMode(motor3pin2, OUTPUT);
-  pinMode(motor4pin1, OUTPUT);
-  pinMode(motor4pin2, OUTPUT);
 
 void setup() {
   pinMode(motor1pin1, OUTPUT);
@@ -34,12 +26,11 @@ void setup() {
   pinMode(motor4pin1, OUTPUT);
   pinMode(motor4pin2, OUTPUT);
   Serial.begin(9600);
-  rgb.isConnected();
 }
 
 
 
 void loop() {
   // put your main code here, to run repeatedly:
-  rgb.printResults();
+  
 }
