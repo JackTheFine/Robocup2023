@@ -1,12 +1,12 @@
 
 void foward() {
   
-  //digitalWrite(motor1pin1, HIGH);
-  //digitalWrite(motor1pin2, LOW);
-  //digitalWrite(motor3pin1, HIGH);
-  //digitalWrite(motor3pin2, LOW);
+  digitalWrite(1, HIGH);
+  digitalWrite(2, LOW);
+  digitalWrite(5, HIGH);
+  digitalWrite(6, LOW);
   
-}
+};
 
 void backward() {
   
@@ -16,7 +16,7 @@ void backward() {
   //digitalWrite(motor3pin2, HIGH);
 
   
-}
+};
 
 void left() {
   
