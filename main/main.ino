@@ -1,10 +1,10 @@
 #include "drivecode.h"
-#include "rgbsensorcode.h"
+//#include "rgbsensorcode.h"
 #include <Wire.h>
 #include "Adafruit_TCS34725.h"
-RGBSensor rgb = new RGBSensor();
+//RGBSensor rgb = new RGBSensor();
 
-  int motor1pin1 = 1;
+int motor1pin1 = 1;
 int motor1pin2 = 2;
 
 int motor2pin1 = 3;
@@ -32,5 +32,5 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  
+  drive();
 }
