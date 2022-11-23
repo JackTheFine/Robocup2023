@@ -1,13 +1,13 @@
-public class RGBSensor {
+class RGBSensor {
   #include <Wire.h>
   #include "Adafruit_TCS34725.h"
   
-  private red;
-  private green;
-  private blue;
-  private co; //c
-  private l; //lux
-  private cT; //colortemp
+  private double red;
+  private double green;
+  private double blue;
+  private double co; //c
+  private double l; //lux
+  private double cT; //colortemp
   private Adafruit_TCS34725 tcs = Adafruit_TCS34725(TCS34725_INTEGRATIONTIME_614MS, TCS34725_GAIN_1X);
   
   
@@ -33,7 +33,7 @@ public class RGBSensor {
       Serial.println("No TCS34725 found ... check your connections");
     }
   }
-  void printResults() {
+  public void printResults() {
       
     uint16_t r, g, b, c, colorTemp, lux;
     tcs.getRawData(&r, &g, &b, &c);
