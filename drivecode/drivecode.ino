@@ -1,5 +1,4 @@
 #include <Wire.h>
-#include "Adafruit_TCS34725.h"
 
 int motor1pin1 = 2;
 int motor1pin2 = 3;
