@@ -68,7 +68,7 @@ void motortest() {
   digitalWrite(motor1pin1, HIGH);
   digitalWrite(motor1pin2, LOW);
   Serial.println("Motor two shoukld be moving");
-  delay(1000);
+  delay(1000);//Ari was here...
   digitalWrite(motor2pin1, HIGH);
   digitalWrite(motor2pin2, LOW);
   Serial.println("Motor two shoukld be moving");
