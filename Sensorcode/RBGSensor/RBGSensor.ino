@@ -16,14 +16,10 @@ Adafruit_TCS34725 tcs = Adafruit_TCS34725(TCS34725_INTEGRATIONTIME_614MS, TCS347
 
 void setup(void) {
   Serial.begin(9600);
-
-  if (tcs.begin()) {
-    Serial.println("Found sensor");
-  } else {
-    Serial.println("No TCS34725 found ... check your connections");
-    while (1);
-  }
-
+  for (i = 0, i < 8, i++){
+  if (!tcs.begin()) {
+    Serial.println("sensor " + i + " broken");
+  } }
   // Now we're ready to get readings!
 }
 
