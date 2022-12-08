@@ -74,12 +74,12 @@ void drive(int gSpeed, int gAngle, int gRotation) {
 
   //directions ALL MOTORS MIGHT BE TURNING WRONG DIR!!!!!! CALIBRATE!!!!!
   if( drivex(gSpeed,gAngle) + gRotation >= 0 ) {
-    digitalWrite(m1p1, HIGH);
-    digitalWrite(m1p2, LOW);
-  }
-   else{
     digitalWrite(m1p1, LOW);
     digitalWrite(m1p2, HIGH);
+  }
+   else{
+    digitalWrite(m1p1, HIGH);
+    digitalWrite(m1p2, LOW);
   }
   if( drivex(gSpeed,gAngle) - gRotation >= 0 ) {
     digitalWrite(m3p1, HIGH);
@@ -98,12 +98,12 @@ void drive(int gSpeed, int gAngle, int gRotation) {
     digitalWrite(m2p2, HIGH);
   }
   if( drivey(gSpeed,gAngle) - gRotation >= 0) {
-    digitalWrite(m4p1, HIGH);
-    digitalWrite(m4p2, LOW);
-  }
-  else {
     digitalWrite(m4p1, LOW);
     digitalWrite(m4p2, HIGH);
+  }
+  else {
+    digitalWrite(m4p1, HIGH);
+    digitalWrite(m4p2, LOW);
   } 
 }
 
