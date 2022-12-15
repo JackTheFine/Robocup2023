@@ -71,7 +71,7 @@ void drive(int gSpeed, int gAngle, int gRotation) {
   analogWrite(enB, abs(drivey(gSpeed,gAngle)+gRotation)*2);
   analogWrite(enC, abs(drivex(gSpeed,gAngle)-gRotation)*2);
   analogWrite(enD, abs(drivey(gSpeed,gAngle)-gRotation)*2);
-
+//
   //directions ALL MOTORS MIGHT BE TURNING WRONG DIR!!!!!! CALIBRATE!!!!!
   if( drivex(gSpeed,gAngle) + gRotation >= 0 ) {
     digitalWrite(m1p1, LOW);
