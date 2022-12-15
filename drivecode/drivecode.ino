@@ -18,7 +18,7 @@ int enD = 13;
 double gSpeed;
 double gAngle;
 double gRotation;
-bool abc = true; 
+bool abc = true;
 
 #define Pi 3.14159
 
